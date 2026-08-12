@@ -1,336 +1,335 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마포 비즈니스 룸싸롱 코스 예약 · 소개</title>
-    <meta name="description" content="마포에서 10년간 비즈니스 접대 전문으로 운영 중인 룸싸롱. 국내 최상위 마케팅 임원 출신 팀이 만든 차별화된 코스 예약 시스템을 소개합니다.">
-    <meta name="keywords" content="마포룸싸롱, 마포비즈니스룸싸롱, 마포룸싸롱코스, 마포예약, 마포가성비, 마곡룸싸롱, 합정룸싸롱, 비즈니스접대">
-    <meta name="telephone" content="010-6279-0862">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-mono-chrome">
-    <link rel="canonical" href="https://mapo-room-course.shop/">
-    <meta property="og:title" content="마포 비즈니스 룸싸롱 코스 예약 · 팀 소개">
-    <meta property="og:description" content="10년 업력, 5,000건 이상의 비즈니스 접대 성공 데이터 기반. 마포 유일의 데이터 기반 코스 추천 시스템.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mapo-room-course.shop/">
-    <meta property="og:site_name" content="셔츠킹 마포 비즈니스 룸싸롱">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="robots" content="index, follow">
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: #f8f8f8;
-            color: #1d1d1f;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-        a {
-            color: #1d1d1f;
-            text-decoration: none;
-            transition: opacity 0.2s ease;
-        }
-        a:hover {
-            opacity: 0.7;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        .container {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        h1, h2, h3 {
-            font-weight: 600;
-            letter-spacing: -0.02em;
-        }
-        h1 {
-            font-size: 2.5rem;
-            line-height: 1.1;
-            margin-bottom: 1rem;
-        }
-        h2 {
-            font-size: 1.8rem;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-        }
-        h3 {
-            font-size: 1.2rem;
-            line-height: 1.3;
-            margin-bottom: 0.75rem;
-        }
-        p {
-            margin-bottom: 1rem;
-            color: #424245;
-        }
-        .text-small {
-            font-size: 0.875rem;
-            color: #86868b;
-        }
-        .section-gap {
-            padding: 4rem 0;
-        }
-        .section-gap-large {
-            padding: 6rem 0;
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        @media (max-width: 768px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.4rem;
-            }
-            .section-gap {
-                padding: 2.5rem 0;
-            }
-            .section-gap-large {
-                padding: 3.5rem 0;
-            }
-        }
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(248, 248, 248, 0.95);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0,0,0,0.08);
-            z-index: 1000;
-        }
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 56px;
-        }
-        nav .logo {
-            font-weight: 600;
-            font-size: 1.1rem;
-            letter-spacing: -0.01em;
-        }
-        nav .nav-links {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-        }
-        nav .nav-links a {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        nav .tel-link {
-            background: #1d1d1f;
-            color: #fff !important;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-        nav .tel-link:hover {
-            opacity: 0.85;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 4px;
-        }
-        .hamburger-menu span {
-            width: 24px;
-            height: 2px;
-            background: #1d1d1f;
-            border-radius: 2px;
-            transition: 0.3s;
-        }
-        @media (max-width: 768px) {
-            nav .nav-links {
-                display: none;
-                position: absolute;
-                top: 56px;
-                left: 0;
-                right: 0;
-                background: rgba(248, 248, 248, 0.98);
-                flex-direction: column;
-                padding: 1.5rem;
-                gap: 1rem;
-                border-bottom: 1px solid rgba(0,0,0,0.08);
-            }
-            nav .nav-links.active {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: flex;
-            }
-        }
-        /* Hero */
-        .hero {
-            padding-top: 120px;
-            padding-bottom: 4rem;
-            background: #f8f8f8;
-        }
-        .hero h1 {
-            max-width: 800px;
-        }
-        .hero p {
-            font-size: 1.15rem;
-            max-width: 600px;
-            color: #424245;
-        }
-        /* Stats */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            text-align: center;
-        }
-        .stats-grid .stat-item h3 {
-            font-size: 2.2rem;
-            margin-bottom: 0.25rem;
-        }
-        .stats-grid .stat-item p {
-            font-size: 0.95rem;
-            color: #86868b;
-            margin-bottom: 0;
-        }
-        @media (max-width: 768px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-        }
-        /* Cards */
-        .card {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-            border: 1px solid rgba(0,0,0,0.06);
-        }
-        .card p {
-            margin-bottom: 0.5rem;
-        }
-        /* Timeline */
-        .timeline-item {
-            border-left: 2px solid #d2d2d7;
-            padding-left: 1.5rem;
-            margin-bottom: 2rem;
-            position: relative;
-        }
-        .timeline-item::before {
-            content: '';
-            width: 10px;
-            height: 10px;
-            background: #1d1d1f;
-            border-radius: 50%;
-            position: absolute;
-            left: -6px;
-            top: 6px;
-        }
-        .timeline-item .year {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: #1d1d1f;
-        }
-        /* Footer */
-        footer {
-            border-top: 1px solid rgba(0,0,0,0.08);
-            padding: 2rem 0;
-            text-align: center;
-        }
-        footer p {
-            margin-bottom: 0.25rem;
-            font-size: 0.85rem;
-            color: #86868b;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>마포 비즈니스 룸싸롱 코스 예약 · 소개</title>
+ <meta name="description" content="마포에서 10년간 비즈니스 접대 전문으로 운영 중인 룸싸롱. 국내 최상위 마케팅 임원 출신 팀이 만든 차별화된 코스 예약 시스템을 소개합니다.">
+ <meta name="keywords" content="마포룸싸롱, 마포비즈니스룸싸롱, 마포룸싸롱코스, 마포예약, 마포가성비, 마곡룸싸롱, 합정룸싸롱, 비즈니스접대">
+ <meta name="telephone" content="010-6279-0862">
+ <link rel="canonical" href="https://mapo-room-course.shop/about.html">
+ <meta property="og:title" content="마포 비즈니스 룸싸롱 코스 예약 · 소개">
+ <meta property="og:description" content="마포에서 10년간 비즈니스 접대 전문으로 운영 중인 룸싸롱. 국내 최상위 마케팅 임원 출신 팀이 만든 차별화된 코스 예약 시스템을 소개합니다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://mapo-room-course.shop/about.html">
+ <meta property="og:site_name" content="셔츠킹 마포 비즈니스 룸싸롱">
+ <meta property="og:locale" content="ko_KR">
+ <meta name="robots" content="index, follow">
+ <style>
+ *,
+ *::before,
+ *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background: #f8f8f8;
+ color: #1d1d1f;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+ a {
+ color: #1d1d1f;
+ text-decoration: none;
+ transition: opacity 0.2s ease;
+ }
+ a:hover {
+ opacity: 0.7;
+ }
+ img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+ .container {
+ max-width: 980px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ h1, h2, h3 {
+ font-weight: 600;
+ letter-spacing: -0.02em;
+ }
+ h1 {
+ font-size: 2.5rem;
+ line-height: 1.1;
+ margin-bottom: 1rem;
+ }
+ h2 {
+ font-size: 1.8rem;
+ line-height: 1.2;
+ margin-bottom: 1.5rem;
+ }
+ h3 {
+ font-size: 1.2rem;
+ line-height: 1.3;
+ margin-bottom: 0.75rem;
+ }
+ p {
+ margin-bottom: 1rem;
+ color: #424245;
+ }
+ .text-small {
+ font-size: 0.875rem;
+ color: #86868b;
+ }
+ .section-gap {
+ padding: 4rem 0;
+ }
+ .section-gap-large {
+ padding: 6rem 0;
+ }
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 2rem;
+ }
+ @media (max-width: 768px) {
+ .grid-2 {
+ grid-template-columns: 1fr;
+ }
+ h1 {
+ font-size: 1.8rem;
+ }
+ h2 {
+ font-size: 1.4rem;
+ }
+ .section-gap {
+ padding: 2.5rem 0;
+ }
+ .section-gap-large {
+ padding: 3.5rem 0;
+ }
+ }
+ /* Navigation */
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: rgba(248, 248, 248, 0.95);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(0,0,0,0.08);
+ z-index: 1000;
+ }
+ nav .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 56px;
+ }
+ nav .logo {
+ font-weight: 600;
+ font-size: 1.1rem;
+ letter-spacing: -0.01em;
+ }
+ nav .nav-links {
+ display: flex;
+ gap: 1.5rem;
+ align-items: center;
+ }
+ nav .nav-links a {
+ font-size: 0.9rem;
+ font-weight: 500;
+ }
+ nav .tel-link {
+ background: #1d1d1f;
+ color: #fff !important;
+ padding: 6px 16px;
+ border-radius: 20px;
+ font-size: 0.85rem;
+ font-weight: 600;
+ }
+ nav .tel-link:hover {
+ opacity: 0.85;
+ }
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 4px;
+ }
+ .hamburger-menu span {
+ width: 24px;
+ height: 2px;
+ background: #1d1d1f;
+ border-radius: 2px;
+ transition: 0.3s;
+ }
+ @media (max-width: 768px) {
+ nav .nav-links {
+ display: none;
+ position: absolute;
+ top: 56px;
+ left: 0;
+ right: 0;
+ background: rgba(248, 248, 248, 0.98);
+ flex-direction: column;
+ padding: 1.5rem;
+ gap: 1rem;
+ border-bottom: 1px solid rgba(0,0,0,0.08);
+ }
+ nav .nav-links.active {
+ display: flex;
+ }
+ .hamburger-menu {
+ display: flex;
+ }
+ }
+ /* Hero */
+ .hero {
+ padding-top: 120px;
+ padding-bottom: 4rem;
+ background: #f8f8f8;
+ }
+ .hero h1 {
+ max-width: 800px;
+ }
+ .hero p {
+ font-size: 1.15rem;
+ max-width: 600px;
+ color: #424245;
+ }
+ /* Stats */
+ .stats-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 2rem;
+ text-align: center;
+ }
+ .stats-grid .stat-item h3 {
+ font-size: 2.2rem;
+ margin-bottom: 0.25rem;
+ }
+ .stats-grid .stat-item p {
+ font-size: 0.95rem;
+ color: #86868b;
+ margin-bottom: 0;
+ }
+ @media (max-width: 768px) {
+ .stats-grid {
+ grid-template-columns: 1fr;
+ gap: 1.5rem;
+ }
+ }
+ /* Cards */
+ .card {
+ background: #ffffff;
+ border-radius: 16px;
+ padding: 2rem;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+ border: 1px solid rgba(0,0,0,0.06);
+ }
+ .card p {
+ margin-bottom: 0.5rem;
+ }
+ /* Timeline */
+ .timeline-item {
+ border-left: 2px solid #d2d2d7;
+ padding-left: 1.5rem;
+ margin-bottom: 2rem;
+ position: relative;
+ }
+ .timeline-item::before {
+ content: '';
+ width: 10px;
+ height: 10px;
+ background: #1d1d1f;
+ border-radius: 50%;
+ position: absolute;
+ left: -6px;
+ top: 6px;
+ }
+ .timeline-item .year {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: #1d1d1f;
+ }
+ /* Footer */
+ footer {
+ border-top: 1px solid rgba(0,0,0,0.08);
+ padding: 2rem 0;
+ text-align: center;
+ }
+ footer p {
+ margin-bottom: 0.25rem;
+ font-size: 0.85rem;
+ color: #86868b;
+ }
+ </style>
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
 
 <header>
-  <div class="container">
-    <a href="/" class="logo">마포 룸싸롱 코스</a>
-    <div class="nav-links">
-      <a href="/">홈</a>
-      <a href="/services.html">코스 구성</a>
-      <a href="/reviews.html">준비 가이드</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/contact.html">문의</a>
-      <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
-    </div>
-  </div>
+ <div class="container">
+ <a href="/" class="logo">마포 룸싸롱 코스</a>
+ <div class="nav-links">
+ <a href="/">홈</a>
+ <a href="/services.html">코스 구성</a>
+ <a href="/reviews.html">준비 가이드</a>
+ <a href="/faq.html">FAQ</a>
+ <a href="/contact.html">문의</a>
+ <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+ </div>
+ </div>
 </header>
 
 <main>
-  <section class="hero container">
-    <h1>코스 예약이라는 방식에 대해</h1>
-    <p class="text-small">왜 구간을 먼저 정하는 방식으로 운영하는지 정리했습니다.</p>
-  </section>
+ <section class="hero container">
+ <h1>코스 예약이라는 방식에 대해</h1>
+ <p class="text-small">왜 구간을 먼저 정하는 방식으로 운영하는지 정리했습니다.</p>
+ </section>
 
-  <section class="container section-gap">
-    <div class="card">
-      <h2>자리를 주도하는 사람의 부담</h2>
-      <p>업무로 이어지는 자리의 실무는 대부분 한 사람에게 몰립니다. 예약하고, 인원을 모으고, 중간에 조율하고, 마무리까지 봅니다. 그 사람이 자리 내내 진행을 관리하고 있으면 정작 본인은 그 자리에 참석하지 못한 셈이 됩니다.</p>
-      <p>코스는 그 결정들을 앞으로 당겨 놓는 방식입니다. 시작 전에 정해두면 진행 중에는 정할 것이 없고, 담당자도 자리에 있을 수 있습니다.</p>
-    </div>
-  </section>
+ <section class="container section-gap">
+ <div class="card">
+ <h2>자리를 주도하는 사람의 부담</h2>
+ <p>업무로 이어지는 자리의 실무는 대부분 한 사람에게 몰립니다. 예약하고, 인원을 모으고, 중간에 조율하고, 마무리까지 봅니다. 그 사람이 자리 내내 진행을 관리하고 있으면 정작 본인은 그 자리에 참석하지 못한 셈이 됩니다.</p>
+ <p>코스는 그 결정들을 앞으로 당겨 놓는 방식입니다. 시작 전에 정해두면 진행 중에는 정할 것이 없고, 담당자도 자리에 있을 수 있습니다.</p>
+ </div>
+ </section>
 
-  <section class="container section-gap">
-    <h2>운영 기준</h2>
-    <div class="grid-2">
-      <div class="card">
-        <h3>구간을 먼저</h3>
-        <p>시작과 종료를 정하고 나머지를 맞춥니다. 끝나는 시각이 정해져 있어야 참석자가 다음 일정을 잡을 수 있습니다.</p>
-      </div>
-      <div class="card">
-        <h3>창구는 하나로</h3>
-        <p>담당자 한 분과의 연락으로 조율이 끝나게 합니다. 여러 명이 각자 문의하면 전달이 엇갈리고, 그건 현장에서 드러납니다.</p>
-      </div>
-    </div>
-  </section>
+ <section class="container section-gap">
+ <h2>운영 기준</h2>
+ <div class="grid-2">
+ <div class="card">
+ <h3>구간을 먼저</h3>
+ <p>시작과 종료를 정하고 나머지를 맞춥니다. 끝나는 시각이 정해져 있어야 참석자가 다음 일정을 잡을 수 있습니다.</p>
+ </div>
+ <div class="card">
+ <h3>창구는 하나로</h3>
+ <p>담당자 한 분과의 연락으로 조율이 끝나게 합니다. 여러 명이 각자 문의하면 전달이 엇갈리고, 그건 현장에서 드러납니다.</p>
+ </div>
+ </div>
+ </section>
 
-  <section class="container section-gap timeline-item">
-    <h2>문의부터 마무리까지</h2>
-    <p><span class="year">1</span> 자리의 성격과 대략의 구간을 확인합니다. 확정되지 않은 항목은 범위로 잡습니다.</p>
-    <p><span class="year">2</span> 조건에 맞는 구성을 정리해 드립니다. 포함과 별도의 경계를 이때 분명히 합니다.</p>
-    <p><span class="year">3</span> 인원과 시간이 확정되면 맞춥니다. 늦게 합류하는 인원이 있으면 동선을 미리 반영합니다.</p>
-    <p><span class="year">4</span> 정산 방식은 미리 정해둡니다. 마무리 단계에서 정하면 그때부터 시간이 걸립니다.</p>
-  </section>
+ <section class="container section-gap timeline-item">
+ <h2>문의부터 마무리까지</h2>
+ <p><span class="year">1</span> 자리의 성격과 대략의 구간을 확인합니다. 확정되지 않은 항목은 범위로 잡습니다.</p>
+ <p><span class="year">2</span> 조건에 맞는 구성을 정리해 드립니다. 포함과 별도의 경계를 이때 분명히 합니다.</p>
+ <p><span class="year">3</span> 인원과 시간이 확정되면 맞춥니다. 늦게 합류하는 인원이 있으면 동선을 미리 반영합니다.</p>
+ <p><span class="year">4</span> 정산 방식은 미리 정해둡니다. 마무리 단계에서 정하면 그때부터 시간이 걸립니다.</p>
+ </section>
 
-  <section class="container">
-    <p><a href="tel:01062790862" class="tel-link">010-6279-0862</a></p>
-  </section>
+ <section class="container">
+ <p><a href="tel:01062790862" class="tel-link">010-6279-0862</a></p>
+ </section>
 </main>
 
 <footer>
-  <div class="container">
-    <p>마포 비즈니스 룸싸롱 코스 예약 · <a href="tel:01062790862">010-6279-0862</a></p>
-  </div>
+ <div class="container">
+ <p>마포 비즈니스 룸싸롱 코스 예약 · <a href="tel:01062790862">010-6279-0862</a></p>
+ </div>
 </footer>
 
 
